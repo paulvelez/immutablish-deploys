@@ -1,6 +1,0 @@
-- hosts: fancyapp-rolling
-  vars_files:
-  - vars/settings.yml
-  roles:
-  - infra   
-  - rolling_asg
