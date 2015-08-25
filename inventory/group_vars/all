@@ -1,7 +1,7 @@
-app_name: rollingAMI
-instance_type: m1.small
-region: us-east-1
-key_name: jmartin
+app_name: immutableDemo
+instance_type: t2.micro
+region: us-west-1
+key_name: deployer_uswest1
 lc_security_groups:
 - "{{ app_security_group.group_id }}"
 - "{{ admin_access_group.group_id }}"
@@ -25,5 +25,3 @@ route_tables:
     routes:
       - dest: 0.0.0.0/0
         gw: igw
-
-
